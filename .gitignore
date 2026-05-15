@@ -3,6 +3,7 @@
 anthropic_key*
 .env
 .secrets/
+.streamlit/secrets.toml
 
 # Python
 __pycache__/
