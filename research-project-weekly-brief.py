@@ -66,7 +66,7 @@ def build_prompt(all_posts: list[dict]) -> str:
             lines.append(f"  > {p['selftext']}")
     post_block = "\n".join(lines)
 
-    return f"""You are a research analyst for a Harvard student focused on AI, law, politics, and technology policy.
+    return f"""You are a research analyst focused on AI, law, politics, and technology policy.
 
 Below are the top Reddit posts from r/law, r/privacy, r/MachineLearning, and r/technology. Each post includes its URL.
 
@@ -102,7 +102,7 @@ def generate_brief(prompt: str) -> str:
 def save_brief(brief: str, date_str: str, all_posts: list[dict]) -> str:
     filename = f"brief-{date_str}.md"
     filepath = os.path.join(PROJECT_DIR, filename)
-    header = f"# Tech Policy Weekly Brief — {date_str}\n**Track:** Independent Research\n\n---\n\n"
+    header = f"# Tech Policy Weekly Brief — {date_str}\n\n---\n\n"
     with open(filepath, "w") as f:
         f.write(header + brief)
     return filepath

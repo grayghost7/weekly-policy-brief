@@ -77,8 +77,6 @@ if not briefs:
 
 with st.sidebar:
     st.markdown("""
-    <p style="font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;
-    color:#6b7280;margin-bottom:0.2rem;">Harvard University · Independent Research</p>
     <p style="font-family:'Playfair Display',serif;font-size:1.1rem;
     color:#1a3a5c;margin-bottom:1.2rem;">Tech Policy<br>Weekly Brief</p>
     """, unsafe_allow_html=True)
