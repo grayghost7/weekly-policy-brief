@@ -7,6 +7,10 @@ GIT=/usr/bin/git
 DIR=/Users/grayj/Desktop/GroundZero/project1-weekly-brief
 LOG=$DIR/run_weekly.log
 
+# Ensure PATH includes Homebrew and user-installed tools for git credential helpers
+export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:$PATH"
+export HOME=/Users/grayj
+
 {
   echo "===== $(date) ====="
   cd "$DIR" || exit 1
